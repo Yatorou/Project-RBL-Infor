@@ -10,13 +10,13 @@ import Information from "./routes/Information";
 export default function App() {
   return (
     <Router>
-      <div className=" h-screen w-full flex">
+      <div className=" overflow-hidden h-screen w-full flex">
         <div className=" m-3 w-full bg-white flex rounded-lg">
           <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               {/* Page content here */}
-              <div className=" p-3 rounded-md bg-red">
+              <div className="rounded-md h-full">
                 <Routes>
                   <Route index element={<Home />} />
                   <Route path="roadmap" element={<Roadmap />} />
@@ -29,7 +29,7 @@ export default function App() {
               </div>
               <label
                 htmlFor="my-drawer"
-                className="btn btn-primary drawer-button fixed right-6 bottom-6 shadow-md"
+                className="btn btn-accent drawer-button fixed left-6 bottom-6 shadow-md"
               >
                 Dashboard
               </label>
