@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./routes/Home";
 import NoPage from "./routes/NoPage";
 import Todo_List from "./routes/Todo_List";
@@ -45,42 +45,42 @@ export default function App() {
                 <li>
                   <h2 className="menu-title">Menu</h2>
                   <ul>
-                    <a href="/">
+                    <Link to="/">
                       <li>
                         <a>Home</a>
                       </li>
-                    </a>
-                    <a href="todolist">
+                    </Link>
+                    <Link to="todolist">
                       <li>
                         <a>Todo List</a>
                       </li>
-                    </a>
-                    <a href="roadmap">
+                    </Link>
+                    <Link to="roadmap">
                       <li>
                         <a>Roadmap</a>
                       </li>
-                    </a>
+                    </Link>
                   </ul>
                 </li>
                 <div className=" flex-1"></div>
                 <li>
                   <h2 className="menu-title">App</h2>
                   <ul>
-                    <a href="account">
+                    <Link to="account">
                       <li>
                         <a>Account</a>
                       </li>
-                    </a>
-                    <a href="settings">
+                    </Link>
+                    <Link to="settings">
                       <li>
                         <a>Settings</a>
                       </li>
-                    </a>
-                    <a href="information">
+                    </Link>
+                    <Link to="information">
                       <li>
                         <a>Information</a>
                       </li>
-                    </a>
+                    </Link>
                   </ul>
                 </li>
               </ul>
